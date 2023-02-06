@@ -1,12 +1,12 @@
 import './App.css'
-import Navbar from './portfolio components/Navbar'
+import NavBar from './portfolio components/NavBar'
 
 function App() {
 
   return (
     <div className="App">
       <h1>Ben Nguyen</h1>
-      <Navbar />
+      <NavBar />
     </div>
   )
 }

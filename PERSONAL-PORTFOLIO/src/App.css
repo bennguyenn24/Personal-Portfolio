@@ -201,7 +201,26 @@ nav.navbar .navbar-toggler-icon:after {
 }
 
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
-  transform: translateY(8px) rotate(-45deg);
+  transform: translateY(8px) rotate(45deg);
   background-color: #fff;
   height: 2px;
 } 
+
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  border-color: transparent;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}

@@ -1,5 +1,8 @@
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
+import navIcon1 from '../img/email.svg'
+import navIcon2 from '../img/github.svg'
+import navIcon3 from '../img/linkedin.svg'
 
  const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -40,9 +43,9 @@ import { useState, useEffect } from 'react';
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
-                <a href="#"><img src={''} alt="" /></a>
-                <a href="#"><img src={''} alt="" /></a>
-                <a href="#"><img src={''} alt="" /></a>
+                <a href="#"><img src={navIcon1} alt="" /></a>
+                <a href="#"><img src={navIcon2} alt="" /></a>
+                <a href="#"><img src={navIcon3} alt="" /></a>
             </div>
             <button className='' onClick={() => console.log('connect')}><span>Let's connect</span></button>
           </span>

@@ -315,7 +315,7 @@ text-rotate > .wrap {
 /* Skills */
 
 .skill {
-	padding: 0 0 50px 0;
+	padding: -50px 0;
 	position: relative;
 }
 
@@ -361,7 +361,7 @@ text-rotate > .wrap {
 
 /* Projects */
 .project {
-	padding: 300px 0;
+	padding: 250px 0;
 	position: relative;
 }
 
@@ -410,7 +410,7 @@ border-radius: 50px;
   position: absolute;
   width: 0;
   height: 100%;
-  background: linear-gradient(90.21deg #AA367C -5.91%, #4A2FBF 111.58%);
+  background: linear-gradient(#006d5b -5.91%, #5fb9aa 111.58%);
   top: 0;
   left: 0;
   z-index: -1;
@@ -421,27 +421,28 @@ border-radius: 50px;
   width: 100% !important;
 }
 
-.project .nav.nav-pills .nav-link.active {
+ /* .project .nav.nav-pills .nav-link.active {
   border: 2.5px solid #fff;
   border-radius: 55px 0px 0px 55px;;
-  box-shadow: 0 0 0.25em 0.25em rgba(236, 228, 228, 0.25);
-}
+  /* box-shadow: 0 0 0.25em 0.25em rgba(236, 228, 228, 0.25); 
+} */
 
 .proj-imgbx {
 	position: relative;
-	 border-radius: 30px;
+	 border-radius: 20px;
 	 overflow: hidden;
 	 margin-bottom: 24px;
 }
 
 .proj-imgbx::before {
 	content: "";
-	background: linear-gradient(90.21deg #AA367C -5.91%, #4A2FBF 111.58%);
+	background: linear-gradient(#006d5b -5.91%, #5fb9aa 111.58%);
 	opacity: 0.85;
 	position: absolute;
 	width: 100%;
 	height: 0;
 	transition: 0.4s ease-in-out;
+	/* -269deg, #006d5b, #5fb9aa) */
 }
 
 .proj-imgbx:hover::before {

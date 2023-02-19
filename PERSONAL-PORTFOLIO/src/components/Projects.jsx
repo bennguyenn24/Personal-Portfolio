@@ -32,7 +32,8 @@ const Projects = () => {
 						<Tab.Container id="projects-tabs" defaultActiveKey="first">
 							<Nav
 								variant="pills"
-								className="nav-pills mb-5 justify-content-center align-items-center "
+								className="nav-pills mb-5 justify-content-center justify-content-center align-items-center" 
+								id="pills-tab"
 							>
 								<Nav.Item>
 									<Nav.Link eventKey="first">Tab One</Nav.Link>

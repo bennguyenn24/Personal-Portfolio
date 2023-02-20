@@ -1,7 +1,8 @@
 import { Container, Row, Nav, Col, Tab } from "react-bootstrap";
-// import { ProjectCard } from "./ProjectCard";
 import sampleproject1 from "../img/sampleproject1.jpg";
 import ProjectCard from "./ProjectCard";
+import 'animate.css';
+import TrackVisibility from 'react-on-screen'
 
 const Projects = () => {
 	const projects = [
@@ -26,9 +27,14 @@ const Projects = () => {
 		<section className="project" id="projects">
 			<Container>
 				<Row>
-					<Col>
+					<Col size={12}>
+					<TrackVisibility>
+                        {({isVisible}) =>
+                        <div className={isVisible ? "animate__animated animate__slideInUp" : ""}>
 						<h2>Projects</h2>
 						<p>What I did</p>
+						</div>}
+                        </TrackVisibility>
 						<Tab.Container id="projects-tabs" defaultActiveKey="first">
 							<Nav
 								variant="pills"
@@ -45,7 +51,7 @@ const Projects = () => {
 									<Nav.Link eventKey="third">Tab Three</Nav.Link>
 								</Nav.Item>
 							</Nav>
-							<Tab.Content>
+							<Tab.Content id="slideInUp">
 								<Tab.Pane eventKey="first">
 									<Row>
 										{projects.map((project, index) => (

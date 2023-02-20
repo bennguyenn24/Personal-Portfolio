@@ -8,13 +8,18 @@
 html {
 	scroll-behavior: smooth;
 	scroll-padding-top: 75px;
+	height: 100%;
 }
 
 body {
+	height: 100%;
+	margin: 0;
 	font-weight: 400;
 	overflow-x: hidden;
 	position: relative;
 	background: linear-gradient(155deg, #006d5b, #fff);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	color: #fff !important;
 	font-family: "Poppins", sans-serif;
 	padding: 50px;
@@ -38,10 +43,6 @@ h1, h2, h3, h4, h5, h6, h7 {
 	.App-logo {
 		animation: app-logo-spin infinite 20s linear;
 	}
-}
-
-p.danger {
-	color: red;
 }
 
 nav.navbar {
@@ -136,6 +137,7 @@ span.navbar-text {
 	font-weight: 700;
 	color: #fff;
 	border: 1px solid #fff;
+	border-radius: 10px;
 	padding: 18px 34px;
 	font-size: 16px;
 	margin-left: 18px;
@@ -248,16 +250,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-weight: 700;
 	letter-spacing: 0.8px;
 	padding: 8px 10px;
+	border: 1px solid #fff;
+	border-radius: 10px;
 	background: linear-gradient(
 		90.21deg,
-		rgba(24, 138, 100, 0.5) -5.91%,
-		rgba(37, 168, 151, 0.5)
-	);
+		rgba(24, 138, 100, 0.5) -5.91%);
 	border: 5px solid rgba(255, 255, 255, 0.5);
 	font-size: 20px;
 	margin-bottom: 16px;
 	display: inline-block;
+	position: relative;
+	
 }
+
 
 .banner h1 {
 	font-size: 65px;
@@ -361,8 +366,9 @@ text-rotate > .wrap {
 
 /* Projects */
 .project {
-	padding: 250px 0;
+	padding: 120px 0;
 	position: relative;
+	z-index: -1;
 }
 
 .project h2 {
@@ -384,10 +390,12 @@ text-rotate > .wrap {
 width: 72%;
 margin: 0 auto;
 border-radius: 50px;
+background-color: rgb(255 255 255 / 10%);
+overflow: hidden;
 }
 
 .project .nav.nav-pills .nav-item {
-  width: 33.3%
+  width: 33.3%;
 }
 
 .project .nav.nav-pills .nav-link {
@@ -418,18 +426,31 @@ border-radius: 50px;
 }
 
 .project .nav.nav-pills .nav-link.active::before {
-  width: 100% !important;
+    width: 100% !important;
 }
 
- /* .project .nav.nav-pills .nav-link.active {
+.project .nav.nav-pills .nav-link.active {
   border: 2.5px solid #fff;
-  border-radius: 55px 0px 0px 55px;;
-  /* box-shadow: 0 0 0.25em 0.25em rgba(236, 228, 228, 0.25); 
-} */
+  border-radius: 55px 0px 0px 55px;
+box-shadow: 0 0 0.25em 0.25em rgba(236, 228, 228, 0.25); 
+} 
+
+.nav-link#projects-tabs-tab-first {
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 55px 0px 0px 55px;
+  }
+  .nav-link#projects-tabs-tab-second {
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  .nav-link#projects-tabs-tab-third {
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 0 55px 55px 0;
+  }
 
 .proj-imgbx {
 	position: relative;
-	 border-radius: 20px;
+	 border-radius: 30px;
 	 overflow: hidden;
 	 margin-bottom: 24px;
 }
@@ -442,7 +463,6 @@ border-radius: 50px;
 	width: 100%;
 	height: 0;
 	transition: 0.4s ease-in-out;
-	/* -269deg, #006d5b, #5fb9aa) */
 }
 
 .proj-imgbx:hover::before {
@@ -469,6 +489,7 @@ border-radius: 50px;
 	font-size: 30px;
 	font-weight: 700;
 	letter-spacing: 0.8px;
+	line-height: 1.1em;
 }
 
 .proj-txtx span {
@@ -486,3 +507,120 @@ border-radius: 50px;
 	right: 0;
 	z-index: -4;
 }
+
+/* Footer */
+
+.footer {
+	padding: 0 0 50px 0;
+	background-size: cover;
+}
+
+.footer p {
+	font-weight: 400;
+	font-size: 14px;
+	color: #006d5b;
+	letter-spacing: 0.5px;
+	margin-top: 20px;
+}
+
+/* Contact */
+
+.contact {
+	padding: 60px 0 200px 0;
+}
+
+.contact img {
+	width: 92%;
+}
+
+.contact h2 {
+	font-size: 45px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+.contact form input, .contact form textarea {
+	width: 100%;
+	height: 50px;
+	padding-inline: 12px;
+	padding-block: 4px;
+	box-shadow: 0 0 0.20em 0.20em rgba(46, 80, 56, 0.747);
+	background: transparent;
+	border-radius: 10px;
+	
+	border: transparent;
+	margin: 20px;
+	font-weight: 500;
+	font-size: 18px;
+	letter-spacing: 0.7px;
+	transition: 0.3s ease-in-out;
+}
+
+.contact form input:focus, .contact form textarea:focus {
+	background: transparent;
+	outline-width: 0;
+  }
+
+  .contact form input::placeholder, .contact form textarea::placeholder {
+	font-size: 12px;
+	font-weight: 400;
+	color: #fff;
+  }
+
+  .contact form button {
+	font-weight: 700;
+	color: #006d5b;
+	border: 1px solid #006d5b;
+	border-radius: 10px;
+	padding: 18px 34px;
+	font-size: 16px;
+	margin-left: 18px;
+	position: relative;
+	background-color: transparent;
+	transition: 0.3s ease-in-out;
+  }
+
+  .contact form button span {
+	z-index: 1;
+	position: relative;
+  }
+  .contact form button:hover {
+	color: #006d5b;
+  }
+  .contact form button::before {
+	content: "";
+	width: 0%;
+	height: 100%;
+	position: absolute;
+	background-color: #ffffff;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	transition: 0.3s ease-in-out;
+  }
+  .contact form button:hover::before {
+	width: 100%;
+  }
+  
+textarea { 
+	height: 250px !important;
+	font-size: 16px !important;
+}
+
+
+
+/* .navbar-text button span {
+	z-index: 1;
+}
+
+.navbar-text button::before {
+	content: "";
+	width: 0%;
+	height: 100%;
+	position: absolute;
+	background-color: #fff;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	transition: 0.3s ease-in-out;
+} */ 

@@ -3,6 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import header from '../img/email.svg'
 import topG from '../img/topg.png'
+import 'animate.css';
+import TrackVisibility from 'react-on-screen'
 
 const Banner = () => {
     const [ loopNum, setLoopNum ] = useState(0);
@@ -46,12 +48,17 @@ const Banner = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
+                        <TrackVisibility>
+                        {({isVisible}) =>
+                        <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                         <span className="tagline">
                             Welcome to my Portfolio
                         </span>
                         <h1>{'BEN NGUYEN' }<span className="wrap"> {text}</span></h1>
                         <p>Lorem ipsum dolor sit amet, Philip is a doug.</p>
                         <button onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={25} /></button>
+                        </div>}
+                        </TrackVisibility>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={topG} alt="Header Img" />

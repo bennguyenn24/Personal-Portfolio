@@ -1,14 +1,13 @@
-* {
+@import url('https://fonts.googleapis.com/css?family=Kanit');
+
+*, html {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	
-}
-
-html {
 	scroll-behavior: smooth;
-	scroll-padding-top: 75px;
-	height: 100%;
+	font-family: 'Kanit', sans-serif;
+	font-size: 20px;
+	letter-spacing: 0.8px;
 }
 
 body {
@@ -135,6 +134,7 @@ span.navbar-text {
 
 .navbar-text button {
 	font-weight: 700;
+	font-size: 12px !important;
 	color: #fff;
 	border: 1px solid #fff;
 	border-radius: 10px;
@@ -263,7 +263,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	
 }
 
-
 .banner h1 {
 	font-size: 65px;
 	font-weight: 700;
@@ -288,7 +287,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-size: 20px;
 	margin-top: 60px;
 	letter-spacing: 0.8px;
-	display: flex;
+	/* display: flex; */
 	align-items: center;
 	border: #fff;
 }
@@ -365,10 +364,9 @@ text-rotate > .wrap {
 
 
 /* Projects */
-.project {
-	padding: 120px 0;
+ .project {
+	padding-top: 200px;
 	position: relative;
-	z-index: -1;
 }
 
 .project h2 {
@@ -377,6 +375,8 @@ text-rotate > .wrap {
 	text-align: center;
 }
 
+/* Project  */
+
 .project p {
 	font-size: 18px;
 	letter-spacing: 0.8px;
@@ -384,14 +384,14 @@ text-rotate > .wrap {
 	margin: 14px auto 30px auto;
 	text-align: center;
 	width: 56%;
+	height: 50%;
 }
 
 .project .nav.nav-pills {
-width: 72%;
-margin: 0 auto;
-border-radius: 50px;
-background-color: rgb(255 255 255 / 10%);
+width: 82%;
+margin: 40px auto;
 overflow: hidden;
+border-radius: 25px !important;
 }
 
 .project .nav.nav-pills .nav-item {
@@ -400,17 +400,15 @@ overflow: hidden;
 
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
-  border-radius: 0;
   color: #fff;
-  padding: 17px 0;
+  padding: 18px 0;
   width: 100%;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.8px;
   position: relative;
   transition: 0.3s ease-in-out;
   text-align: center;
-  z-index: 0;
 }
 
 .project .nav.nav-pills .nav-link::before {
@@ -430,22 +428,17 @@ overflow: hidden;
 }
 
 .project .nav.nav-pills .nav-link.active {
-  border: 2.5px solid #fff;
-  border-radius: 55px 0px 0px 55px;
-box-shadow: 0 0 0.25em 0.25em rgba(236, 228, 228, 0.25); 
+	border-radius: 20px;
 } 
 
 .nav-link#projects-tabs-tab-first {
-	border: 1px solid rgba(255, 255, 255, 0.5);
-	border-radius: 55px 0px 0px 55px;
+	border-radius: 20px;
   }
   .nav-link#projects-tabs-tab-second {
-	border-top: 1px solid rgba(255, 255, 255, 0.5);
-	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 20px;
   }
   .nav-link#projects-tabs-tab-third {
-	border: 1px solid rgba(255, 255, 255, 0.5);
-	border-radius: 0 55px 55px 0;
+	border-radius: 55px 0px 0px 55px;
   }
 
 .proj-imgbx {
@@ -453,11 +446,12 @@ box-shadow: 0 0 0.25em 0.25em rgba(236, 228, 228, 0.25);
 	 border-radius: 30px;
 	 overflow: hidden;
 	 margin-bottom: 24px;
+	 height: 50%;
 }
 
 .proj-imgbx::before {
 	content: "";
-	background: linear-gradient(#006d5b -5.91%, #5fb9aa 111.58%);
+	/* background: linear-gradient(#006d5b -5.91%, #5fb9aa 111.58%); */
 	opacity: 0.85;
 	position: absolute;
 	width: 100%;
@@ -506,7 +500,9 @@ box-shadow: 0 0 0.25em 0.25em rgba(236, 228, 228, 0.25);
 	width: 35%;
 	right: 0;
 	z-index: -4;
-}
+} 
+
+
 
 /* Footer */
 
@@ -526,7 +522,8 @@ box-shadow: 0 0 0.25em 0.25em rgba(236, 228, 228, 0.25);
 /* Contact */
 
 .contact {
-	padding: 60px 0 200px 0;
+	padding: 50px 0;
+	position: relative;
 }
 
 .contact img {

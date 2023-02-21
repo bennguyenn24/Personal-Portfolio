@@ -27,31 +27,28 @@ const Projects = () => {
 		<section className="project" id="projects">
 			<Container>
 				<Row>
-					<Col size={12}>
+					<Col>
 					<TrackVisibility>
                         {({isVisible}) =>
                         <div className={isVisible ? "animate__animated animate__slideInUp" : ""}>
 						<h2>Projects</h2>
 						<p>What I did</p>
-						</div>}
-                        </TrackVisibility>
 						<Tab.Container id="projects-tabs" defaultActiveKey="first">
 							<Nav
 								variant="pills"
 								className="nav-pills mb-5 justify-content-center justify-content-center align-items-center" 
-								id="pills-tab"
-							>
+								id="pills-tab">
 								<Nav.Item>
-									<Nav.Link eventKey="first">Tab One</Nav.Link>
+									<Nav.Link eventKey="first">Steak House</Nav.Link>
 								</Nav.Item>
 								<Nav.Item>
-									<Nav.Link eventKey="second">Tab Two</Nav.Link>
+									<Nav.Link eventKey="second">Fitness App</Nav.Link>
 								</Nav.Item>
 								<Nav.Item>
-									<Nav.Link eventKey="third">Tab Three</Nav.Link>
+									<Nav.Link eventKey="third">Fitness Mobile App</Nav.Link>
 								</Nav.Item>
 							</Nav>
-							<Tab.Content id="slideInUp">
+							<Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
 								<Tab.Pane eventKey="first">
 									<Row>
 										{projects.map((project, index) => (
@@ -59,10 +56,12 @@ const Projects = () => {
 										))}
 									</Row>
 								</Tab.Pane>
-								<Tab.Pane eventKey="second">Philiip</Tab.Pane>
-								<Tab.Pane eventKey="third">Philiip</Tab.Pane>
+								<Tab.Pane eventKey="second"><p>Philiip</p></Tab.Pane>
+								<Tab.Pane eventKey="third"><p>Philiip</p></Tab.Pane>
 							</Tab.Content>
 						</Tab.Container>
+						</div>}
+                        </TrackVisibility>
 					</Col>
 				</Row>
 			</Container>

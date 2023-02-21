@@ -2,7 +2,7 @@ import { Col } from "react-bootstrap";
 
 const ProjectCard = ({ project }) => {
 	return (
-		<Col sm={6} md={4}>
+		<Col sm={16} lg={4} className="my-auto" style={{ height: "1200px" }}>
 			<div className="proj-imgbx">
 				<img src={project.imgUrl} />
 				<div className="proj-txtx">

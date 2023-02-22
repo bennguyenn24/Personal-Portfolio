@@ -9,6 +9,8 @@ import nodeIcon from '../img/nodejs.svg'
 import reactIcon from '../img/react.svg'
 import sqlIcon from '../img/sql.svg'
 import pythonIcon from '../img/python.svg'
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 
 
 const Skills = () => {
@@ -37,6 +39,9 @@ const Skills = () => {
             <Container>
                 <Row>
                     <Col>
+                    <TrackVisibility>
+                    {({ isVisible }) => (
+                    <div className={isVisible ? "animate__animated animate__zoomInUp" : ""}>
                     <div className="skill-bx">
                     <h2>
                         Skills
@@ -77,6 +82,9 @@ const Skills = () => {
                         </div>
                     </Carousel>
                     </div>
+                    </div>
+                    )}
+                    </TrackVisibility>
                     </Col>
                 </Row>
             </Container>

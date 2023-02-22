@@ -16,7 +16,7 @@
 	font-weight: 400;
 	overflow-x: hidden;
 	position: relative;
-	background: linear-gradient(155deg, #006d5b, #fff);
+	background: linear-gradient(155deg, #006d5b, #c1f1e9);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	color: #fff !important;
@@ -26,12 +26,6 @@
 	background-size: 100%100%;
 	position: relative;
 } 
-
-/* h1, h2, h3, h4, h5, h6, h7 {
-	margin: 0;
-	padding: 0;
-	line-height: normal;
-} */
 
 .App-logo {
 	height: 40vmin;
@@ -220,10 +214,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
 
-/* .App {
-	text-align: center;
-} */
-
 .App-logo {
 	height: 40vmin;
 	pointer-events: none;
@@ -240,7 +230,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
 	margin-top: 0;
 	padding: 260px 0 100px 0;
-	/* background-image: url('./img/email.svg'); */
 	background-position: top center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -249,7 +238,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner .tagline {
 	font-weight: 700;
 	letter-spacing: 0.8px;
-	padding: 8px 10px;
+	padding: 18px 10px;
+	left: 40%;
+	bottom: 200px;
 	border: 1px solid #fff;
 	border-radius: 10px;
 	background: linear-gradient(
@@ -257,8 +248,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 		rgba(24, 138, 100, 0.5) -5.91%);
 	border: 5px solid rgba(255, 255, 255, 0.5);
 	font-size: 20px;
-	margin-bottom: 16px;
-	display: inline-block;
 	position: relative;
 	
 }
@@ -268,13 +257,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-weight: 700;
 	letter-spacing: 0.8px;
 	line-height: 1;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 	display: block;
+	top: 100px; 
+	
 }
 
 .banner p {
-	color: #888888;
-	font-size: 18px;
+	color: #fff;
+	font-size: 28px;
 	letter-spacing: 0.8px;
 	line-height: 1.5em;
 	width: 96%;
@@ -287,17 +278,41 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-size: 20px;
 	margin-top: 60px;
 	letter-spacing: 0.8px;
-	/* display: flex; */
+	display: flex;
 	align-items: center;
 	border: #fff;
 }
 
-/* .banner button:hover svg {
+.banner button:hover svg {
   margin-left: 25px;
-} */
+}
 
 .banner img {
 	animation: updown 3s linear infinite;
+}
+
+/* About Me */
+
+.about {
+	padding: 100px 0;
+	position: relative;
+}
+
+
+.about h2 {
+	font-size: 70px;
+	font-weight: 700;
+	margin: 25px;
+	text-align: end;
+}
+
+.about p {
+	font-size: 20px;
+	letter-spacing: .5px;
+	line-height: 2em;
+	margin: 60px; 
+	text-align: justify;
+	width: 130%;
 }
 
 @keyframes updown {
@@ -319,7 +334,7 @@ text-rotate > .wrap {
 /* Skills */
 
 .skill {
-	padding: -50px 0;
+	padding: 175px 0;
 	position: relative;
 }
 
@@ -366,7 +381,7 @@ text-rotate > .wrap {
 
 /* Projects */
  .project {
-	padding-top: 200px;
+	padding-top: 175px;
 	position: relative;
 }
 
@@ -521,7 +536,7 @@ border-radius: 25px !important;
 /* Contact */
 
 .contact {
-	padding: 50px 0;
+	padding: 150px;
 	position: relative;
 }
 
@@ -530,9 +545,10 @@ border-radius: 25px !important;
 }
 
 .contact h2 {
-	font-size: 45px;
+	font-size: 65px;
 	font-weight: 700;
 	margin-bottom: 30px;
+	text-align: center;
 }
 
 .contact form input, .contact form textarea {

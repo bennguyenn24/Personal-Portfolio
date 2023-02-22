@@ -20,7 +20,7 @@ const About = () => {
 										problem-solving skills.  
                                         I'm always looking for <br/>ways to expand my
 										skillset and enhance my professional competency, and I'm eager to take
-										on new challenges that allow me to do so.  
+										on new challenges that allow me to do so.  <br/><br/>
                                         Outside of work, I enjoy
 										going on adventurous journeys that test my limits and help me stay
 										fit. I believe that challenging yourself physically can help you grow

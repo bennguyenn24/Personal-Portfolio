@@ -1,4 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
+import './Footer.css'
 import navIcon1 from '../img/email.svg'
 import navIcon2 from '../img/github.svg'
 import navIcon3 from '../img/linkedin.svg'

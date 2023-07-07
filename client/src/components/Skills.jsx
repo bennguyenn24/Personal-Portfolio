@@ -1,3 +1,4 @@
+import './Skills.css'
 import { Container, Row, Col } from "react-bootstrap" 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -8,7 +9,6 @@ import javascriptIcon from '../img/javascript.svg'
 import nodeIcon from '../img/nodejs.svg'
 import reactIcon from '../img/react.svg'
 import sqlIcon from '../img/sql.svg'
-import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 
@@ -40,7 +40,7 @@ const Skills = () => {
                     <Col>
                     <TrackVisibility>
                     {({ isVisible }) => (
-                    <div className={isVisible ? "animate__animated animate__zoomInUp" : ""}>
+                    <div className={isVisible}>
                     <div className="skill-bx">
                     <h2>
                         Skills

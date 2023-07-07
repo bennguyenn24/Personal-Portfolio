@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './Contact.css'
 import { Col, Container, Row } from "react-bootstrap";
 import topG from "../img/topg.png";
 import 'animate.css';

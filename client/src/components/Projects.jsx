@@ -1,4 +1,5 @@
 import { Container, Row, Nav, Col, Tab } from "react-bootstrap";
+import './Projects.css'
 import sampleproject1 from "../img/sampleproject1.jpg";
 import ProjectCard from "./ProjectCard";
 import 'animate.css';

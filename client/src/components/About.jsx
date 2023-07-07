@@ -1,5 +1,4 @@
 import { Container, Row, Col } from "react-bootstrap";
-import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 const About = () => {
@@ -10,7 +9,7 @@ const About = () => {
 					<Col xs={12} md={12} xl={8}>
 						<TrackVisibility>
 							{({ isVisible }) => (
-								<div className={isVisible ? "animate__animated animate__lightSpeedInRight" : ""}>
+								<div className={isVisible}>
 									<h2>About Me</h2>
 									<p>
                                         I'm a self-taught full-stack web developer who has completed

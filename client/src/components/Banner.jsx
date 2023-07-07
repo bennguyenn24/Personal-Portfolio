@@ -55,7 +55,6 @@ const Banner = () => {
 						<TrackVisibility>
 							{({ isVisible }) => (
 								<div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-									<span className="tagline">Welcome to my Portfolio</span>
 									<h1>
 										{"BEN NGUYEN"}
 										<span className="wrap"> {text}</span>

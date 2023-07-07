@@ -39,7 +39,7 @@ const Projects = () => {
 								className="nav-pills mb-5 justify-content-center justify-content-center align-items-center" 
 								id="pills-tab">
 								<Nav.Item>
-									<Nav.Link eventKey="first">Steak House</Nav.Link>
+									<Nav.Link eventKey="first">SteakHouse Society</Nav.Link>
 								</Nav.Item>
 								<Nav.Item>
 									<Nav.Link eventKey="second">Fitness App</Nav.Link>

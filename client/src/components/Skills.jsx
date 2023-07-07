@@ -8,7 +8,6 @@ import javascriptIcon from '../img/javascript.svg'
 import nodeIcon from '../img/nodejs.svg'
 import reactIcon from '../img/react.svg'
 import sqlIcon from '../img/sql.svg'
-import pythonIcon from '../img/python.svg'
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -62,11 +61,7 @@ const Skills = () => {
                         </div>
                         <div className="item">
                             <img src={reactIcon} alt="Image" />
-                            <h5>React/ReactNative</h5>
-                        </div>
-                        <div className="item">
-                            <img src={pythonIcon} alt="Image" />
-                            <h5>Python</h5>
+                            <h5>React</h5>
                         </div>
                         <div className="item">
                             <img src={expressIcon} alt="Image" />

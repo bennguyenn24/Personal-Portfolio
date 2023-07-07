@@ -13,6 +13,25 @@ nav.navbar {
 	transition: 0.32 ease-in-out;
 }
 
+.navbar-brand {
+	width: 100%;
+	border-radius: 6px; /* Border radius */
+	box-shadow: 0px 2px 6px rgba(255, 255, 255, 0.3); /* Box shadow */
+	overflow: hidden; /* Hide any overflow content */
+	transition: border-color 0.3s ease-in-out; /* Transition for border color */
+}
+
+.navbar-brand img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.navbar-brand:hover {
+	border-color: #fff; /* Border color on hover */
+	box-shadow: 0 2px 6px rgba(245, 245, 245, 0.6); /* Box shadow on hover */
+}
+
 nav.navbar.scrolled {
 	padding: 0px 0;
 	background-color: #006d5b;

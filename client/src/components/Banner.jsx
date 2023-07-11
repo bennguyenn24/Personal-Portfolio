@@ -77,7 +77,7 @@ const Banner = () => {
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={logo4} alt="Header Img" className="logo-image" />
+            <img src={logo4} alt="Header Img" className="logo-image" img-fluid />
           </Col>
         </Row>
       </Container>

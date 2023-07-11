@@ -104,6 +104,6 @@ text-rotate > .wrap {
 
 @media (max-width: 991.98px) {
 	.banner .logo-image {
-	  padding: 100px 0 90px 0;
+	  padding: 0 0px 100px 20px;
 	}
   }

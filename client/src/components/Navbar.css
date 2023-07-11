@@ -187,11 +187,11 @@
   @media (max-width: 991.98px) {
 	.navbar {
 	  flex-wrap: nowrap;
-	  padding: 8px 0;
+	  padding: 7px 0;
 	}
   
 	nav.navbar a.navbar-brand {
-	  width: 30%;
+	  width: 20%;
 	}
   
 	nav.navbar .navbar-nav .nav-link.navbar-link {

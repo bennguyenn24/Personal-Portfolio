@@ -1,8 +1,8 @@
 .banner {
-	padding: 100px 0 100px 0;
-	background-position: top center;
-	background-size: cover;
-	background-repeat: no-repeat;
+	background: transparent; 
+	text-align: center;
+	padding: 100px 20px;
+	margin-top: 30px;
 }
 
 .banner .tagline {
@@ -65,8 +65,10 @@
 /* About Me */
 
 .about {
-	padding: 100px 0;
-	position: relative;
+	background: transparent; 
+	text-align: center;
+	padding: 30px 20px;
+	margin-top: 30px;
 }
 
 
